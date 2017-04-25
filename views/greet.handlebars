@@ -1,0 +1,16 @@
+<h1> This is my Greet App </h1> <br>
+  <a href="http://localhost:3000/usersGreeted">view users greeted</a> <br><br>
+
+<form id="greet-form" method="post" action="/greet">
+<p class="selectLanguage">Choose A Language</p>
+<input type="radio" id="eng" name="languages" value="Hello" checked="checked">English<br>
+<input type="radio" id="zul" name="languages" value="Sawubona" >Zulu<br>
+<input type="radio" id="xho" name="languages" value="Molo" >Xhosa<br>
+<input type="radio" id="afr" name="languages" value="Hallo" >Afrikaans<br><br><br>
+<input type="text"  name="inputName" placeholder="Please Enter User Name" required> </input><br><br><br><br>
+<button type="submit" value="submit"> Greet User </button>
+</form>
+
+  <h1> {{languageOutput}} {{nameOutput}} </h1>
+
+  <h1> Users have been greeted {{greetCountOutput}} times </h1>
