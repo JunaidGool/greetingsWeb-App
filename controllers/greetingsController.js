@@ -6,6 +6,11 @@ var userNames = [{name: 'Pluto', language: 'english'}, {name: 'Mickey Mouse', la
 var duplicates = [];
 var count = 0;
 
+  app.get('/', function(req,res){
+
+    res.redirect('/home');
+  });
+
   app.get('/home', function(req,res){
 
     res.render('home');
