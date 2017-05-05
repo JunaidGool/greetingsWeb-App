@@ -49,10 +49,10 @@ li{
     letter-spacing: 1px;
 }
 
-
-
 h1{
-
     margin-bottom: 0;
+}
 
+.countHeader {
+  visibility: visible;
 }

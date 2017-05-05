@@ -2,10 +2,17 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
 var bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
 // create modules for controller
 var myGreetingsController = require('./controllers/greetingsController');
 // create Express 4 App
 var app = express ();
+
+//connect to mongo database
+mongoose.connect('mongodb://localhost/greetingsdatabase');
+mongoose.Promise = global.Promise; //mongo original is depracated,this prevents it from being depractated
+
 // static files
 app.use(express.static('assets'));
 

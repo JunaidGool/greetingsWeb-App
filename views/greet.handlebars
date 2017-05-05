@@ -3,14 +3,16 @@
 
 <form id="greet-form" method="post" action="/greet">
 <p class="selectLanguage">Choose A Language</p>
-<input type="radio" id="eng" name="languages" value="Hello" checked="checked">English<br>
-<input type="radio" id="zul" name="languages" value="Sawubona" >Zulu<br>
-<input type="radio" id="xho" name="languages" value="Molo" >Xhosa<br>
-<input type="radio" id="afr" name="languages" value="Hallo" >Afrikaans<br><br><br>
+<input type="radio" id="eng" name="language" value="Eng" checked="checked">English<br>
+<input type="radio" id="zul" name="language" value="Zul" >Zulu<br>
+<input type="radio" id="xho" name="language" value="Xho" >Xhosa<br>
+<input type="radio" id="afr" name="language" value="Afr" >Afrikaans<br><br><br>
 <input type="text"  name="inputName" placeholder="Please Enter User Name" required> </input><br><br><br><br>
 <button type="submit" value="submit"> Greet User </button>
 </form>
 
-  <h1> {{languageOutput}} {{nameOutput}} </h1>
+  <h1> {{languageOutput}} </h1>
 
+<div class="countHeader"  id="countHeader" >
   <h1> Users have been greeted {{greetCountOutput}} times </h1>
+</div>

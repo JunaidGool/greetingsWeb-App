@@ -2,9 +2,20 @@
 
 <a href="/greet">Back to Greet</a>
 
-  <h1> Users Greeted </h1>
+
+
+  <!-- <h1> Greetings Counter {{greetCountOutput}} </h1> -->
+
+  <h1> List of User's Greeted </h1>
+
 <ul>
-  {{#each usersGreetedOutput}}
-  <li>{{this.name}}</li>
+  {{#each usersGreeted}}
+  <li>{{this.name}} has been greeted {{this.counter}} in various languages </li>
   {{/each}}
 </ul>
+
+
+<!-- <form id="delete-form" method="post" action="/usersGreeted">
+<input type="text"  name="deleteName" placeholder="Please Enter User Name to delete" required> </input><br><br><br><br>
+<button type="submit" value="submit"> Delete User </button>
+</form> -->
