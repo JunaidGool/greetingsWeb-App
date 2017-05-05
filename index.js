@@ -8,7 +8,11 @@ const mongoose = require ('mongoose');
 const app = express();
 
 //connect to MongoDB
-mongoose.connect('mongodb://localhost/greetingsdatabase');
+// mongoose.connect('mongodb://localhost/greetingsdatabase');
+
+const mongoURL = process.env.mongodb:JunaidGool:Jun11051979@ds121171.mlab.com:21171/greetings-app || "'mongodb://localhost/test'";
+mongoose.connect(mongoURL);
+// mongoose.connect('mongodb://JunaidGool:Jun11051979@ds121171.mlab.com:21171/greetings-app');
 mongoose.Promise = global.Promise;
 
 
